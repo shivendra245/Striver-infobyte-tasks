@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Music Player App</h1>
+        <div class="player">
+            <audio id="audioPlayer" controls>
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="controls">
+            <button id="prevBtn">Previous</button>
+            <button id="playPauseBtn">Play</button>
+            <button id="nextBtn">Next</button>
+            <input type="range" id="seekSlider" min="0" step="1" value="0">
+        </div>
+        <div class="playlist">
+            <h2>Playlist</h2>
+            <ul id="songList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
